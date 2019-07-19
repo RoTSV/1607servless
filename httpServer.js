@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
         if (err) {
             
             res.writeHead(404, 'utf-8', { "Content-Type": contentType });
-            res.end('ошибка страницы' );
+            res.end('Erorr.html');
         } else {
             res.writeHead(200, { "Content-Type": contentType })
             res.end(data)
